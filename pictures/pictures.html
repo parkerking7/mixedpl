@@ -1,0 +1,42 @@
+<head>
+	<style>
+		#content_1{
+			
+		}
+
+	</style>
+
+</head>
+
+<div id="photos">
+	<div ng-style="parraOne" id="wall_1" data-stellar-background-ratio="0.5" class="image">
+	</div>
+
+	<div  id="content_1" class="content">
+
+		<ul class="images">
+			<li ng-repeat="pictures in albumOne track by $index">
+				<img class="float-img" ng-click="changeImgOne($index)" ng-src="{{pictures}}">
+			</li>
+
+
+		</ul>
+
+	</div>
+	<div ng-style="parraTwo" id="wall_2" data-stellar-background-ratio="0.5" class="image"></div>
+
+	<ul class="images">
+		<li ng-repeat="pictures in albumTwo track by $index">
+				<img class="float-img" ng-click="changeImgTwo($index)" ng-src="{{pictures}}">
+			</li>
+	</ul>
+
+
+	<div ng-style="parraThree" id="wall_3" data-stellar-background-ratio="0.5" class="image"></div>
+
+	<ul class="images">
+		<li ng-repeat="pictures in albumThree track by $index">
+				<img class="float-img" ng-click="changeImgThree($index)" ng-src="{{pictures}}">
+			</li>
+	</ul>
+</div>
