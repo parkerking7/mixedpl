@@ -7,10 +7,13 @@
 	text-align: center;
 	font-size: 15px;
 	line-height: 3em;
+
 }
 
 .header-text {
 	color: #FFCDCC;
+margin-left:-1%;
+
 }
 
 .navbar li a {
